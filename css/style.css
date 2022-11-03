@@ -1,0 +1,165 @@
+#body-grid{
+    margin: 2%;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-areas: 
+    "header header header header"
+    "nav nav nav nav"
+    "main aside aside aside"
+    "section section section section"
+    "footer footer footer footer";
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto;
+    gap: 1vh;
+}
+
+
+header{
+    grid-area: header;
+    background-color: white;
+    margin-left: 3vw;
+    
+}
+
+nav{
+    grid-area: nav;
+    background-color: white;
+    margin-left: 3vw;
+    
+}
+.main-section{
+    grid-area: main;
+    padding: 3vw;
+
+}
+aside{
+    grid-area: aside;
+    background-color: white;
+    padding: 3vw;
+    font-family: sans-serif;
+    
+}
+.amigos{
+    grid-area: section;
+    background-color: white;
+    padding: 3vw;
+}
+footer{
+    grid-area: footer;
+    background-color: white;
+}
+
+.nav-list{
+    align-self: center;
+}
+
+li{
+    list-style: none;
+    
+}
+a{
+    text-decoration: none;
+    color: black;
+    transition: 1s;
+    
+
+    
+}
+a:hover{
+    background-color: coral;
+    transition: 1s;
+}
+
+
+.parrafo-principal{
+    padding: 2vh;
+    font-size: 3vh;
+    
+}
+
+
+h1{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5vh;
+}
+.div-form{
+    display: flex;
+    justify-content: center;
+    padding: 10vw;
+    background-color: darkgray;
+    margin: 5vw;
+    
+
+}
+.div-mapa{
+    border: 2px solid black;
+    padding: 5vw;
+}
+.galeria-texto{
+    font-size: 10px;
+    padding: 3vh;
+
+}
+/*
+.container-fluid{
+    background-color: gray;
+    
+}
+*/
+.ul-footer{
+    padding-top: 3vh;
+    
+}
+
+
+.div-icon{
+    display: flex;
+    justify-content: center;
+}
+.p-firma{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+/*MOBILE FIRST*/
+
+
+@media (min-width: 768px) {
+    .nav-list{
+        display: flex;
+        justify-content: space-around;
+        
+    }
+    .amigos{
+        display: flex;
+        justify-content: space-around;
+        padding: 3vw;
+    }
+    
+    main{
+        display: flex;
+    }    
+    
+    aside{
+        justify-content: center;
+    }
+    .galeria{
+        display: flex;
+    }
+    
+    
+
+
+
+}
+
+
+
+
+
+
